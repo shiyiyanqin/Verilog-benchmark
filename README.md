@@ -36,7 +36,11 @@ The project file structure is as below:
    ├─ gen_verilog_from_prompts.py    # Generates Verilog from LLM prompts for validation.
    ├─ Similarity calculation.py      # Computes similarity scores between generated and reference code.
    └─ validation_type_dataset.py     # Builds and tests validation datasets with different task types.
-├── requirements.txt  
+├── requirements.txt
 
+```
 
+### The full dataset
+```
+https://drive.google.com/file/d/10EwzGJ5Ihf0rmGSxDtKdJ84edHstVKpN/view?usp=drive_link
 
