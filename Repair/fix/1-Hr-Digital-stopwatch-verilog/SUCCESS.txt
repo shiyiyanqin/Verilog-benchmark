@@ -1,8 +1,0 @@
-Project: 1-Hr-Digital-stopwatch-verilog
-Fixed at: 
-Iterations: 1
-Initial errors: 0
-Final errors: 0
-Files copied and fixed: 1
-
-This directory contains the successfully fixed Verilog project.

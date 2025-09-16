@@ -1,8 +1,0 @@
-Project: 1D-Causal-Dilated-Convolution
-Fixed at: 2025-07-15 10:28:28
-Iterations: 2
-Initial errors: 0
-Final errors: 0
-Files copied and fixed: 3
-
-This directory contains the successfully fixed Verilog project.
