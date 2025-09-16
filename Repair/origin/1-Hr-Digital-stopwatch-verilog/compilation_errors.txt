@@ -1,0 +1,16 @@
+Compilation started at 2025/08/17 ÷‹»’ 19:26:24.75 
+===================================================== 
+ 
+FILE: stopwatch.v 
+----------------------------------------------------- 
+stopwatch.v:107: error: Unknown module type: BCD
+stopwatch.v:109: error: Unknown module type: BCD
+stopwatch.v:129: error: Unknown module type: BCD
+stopwatch.v:131: error: Unknown module type: BCD
+stopwatch.v:151: error: Unknown module type: BCD
+stopwatch.v:153: error: Unknown module type: BCD
+7 error(s) during elaboration.
+*** These modules were missing:
+        BCD referenced 6 times.
+***
+----------------------------------------------------- 

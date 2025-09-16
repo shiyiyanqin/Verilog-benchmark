@@ -1,0 +1,948 @@
+{
+  "type": "Source",
+  "lineno": 1,
+  "attributes": {
+    "name": ""
+  },
+  "children": [
+    {
+      "type": "Description",
+      "lineno": 1,
+      "children": [
+        {
+          "type": "ModuleDef",
+          "lineno": 1,
+          "end_lineno": 39,
+          "attributes": {
+            "name": "debounce",
+            "default_nettype": "wire"
+          },
+          "children": [
+            {
+              "type": "Paramlist",
+              "lineno": 2,
+              "children": [
+                {
+                  "type": "Parameter",
+                  "lineno": 3,
+                  "attributes": {
+                    "name": "N",
+                    "signed": false
+                  },
+                  "children": [
+                    {
+                      "type": "Rvalue",
+                      "lineno": 0,
+                      "children": [
+                        {
+                          "type": "IntConst",
+                          "lineno": 0,
+                          "attributes": {
+                            "value": "2",
+                            "base": 10
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Parameter",
+                  "lineno": 4,
+                  "attributes": {
+                    "name": "CNT_20MS",
+                    "signed": false
+                  },
+                  "children": [
+                    {
+                      "type": "Rvalue",
+                      "lineno": 0,
+                      "children": [
+                        {
+                          "type": "IntConst",
+                          "lineno": 0,
+                          "attributes": {
+                            "value": "19'h75601",
+                            "base": 10
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Portlist",
+              "lineno": 6,
+              "children": [
+                {
+                  "type": "Input",
+                  "lineno": 7,
+                  "attributes": {
+                    "name": "clk",
+                    "signed": false
+                  }
+                },
+                {
+                  "type": "Input",
+                  "lineno": 8,
+                  "attributes": {
+                    "name": "rst_n",
+                    "signed": false
+                  }
+                },
+                {
+                  "type": "Input",
+                  "lineno": 9,
+                  "attributes": {
+                    "name": "key",
+                    "signed": false
+                  },
+                  "children": [
+                    {
+                      "type": "Width",
+                      "lineno": 9,
+                      "children": [
+                        {
+                          "type": "Minus",
+                          "lineno": 9,
+                          "children": [
+                            {
+                              "type": "Identifier",
+                              "lineno": 9,
+                              "attributes": {
+                                "name": "N",
+                                "scope": null
+                              }
+                            },
+                            {
+                              "type": "IntConst",
+                              "lineno": 0,
+                              "attributes": {
+                                "value": "1",
+                                "base": 10
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "IntConst",
+                          "lineno": 0,
+                          "attributes": {
+                            "value": "0",
+                            "base": 10
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Output",
+                  "lineno": 10,
+                  "attributes": {
+                    "name": "key_pulse",
+                    "signed": false
+                  },
+                  "children": [
+                    {
+                      "type": "Width",
+                      "lineno": 10,
+                      "children": [
+                        {
+                          "type": "Minus",
+                          "lineno": 10,
+                          "children": [
+                            {
+                              "type": "Identifier",
+                              "lineno": 10,
+                              "attributes": {
+                                "name": "N",
+                                "scope": null
+                              }
+                            },
+                            {
+                              "type": "IntConst",
+                              "lineno": 0,
+                              "attributes": {
+                                "value": "1",
+                                "base": 10
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "IntConst",
+                          "lineno": 0,
+                          "attributes": {
+                            "value": "0",
+                            "base": 10
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Reg",
+              "lineno": 12,
+              "attributes": {
+                "name": "cnt",
+                "signed": false
+              },
+              "children": [
+                {
+                  "type": "Width",
+                  "lineno": 12,
+                  "children": [
+                    {
+                      "type": "IntConst",
+                      "lineno": 0,
+                      "attributes": {
+                        "value": "18",
+                        "base": 10
+                      }
+                    },
+                    {
+                      "type": "IntConst",
+                      "lineno": 0,
+                      "attributes": {
+                        "value": "0",
+                        "base": 10
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Always",
+              "lineno": 13,
+              "children": [
+                {
+                  "type": "SensList",
+                  "lineno": 13,
+                  "children": [
+                    {
+                      "type": "Sens",
+                      "lineno": 13,
+                      "attributes": {
+                        "type": "posedge"
+                      },
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 13,
+                          "attributes": {
+                            "name": "clk",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Sens",
+                      "lineno": 13,
+                      "attributes": {
+                        "type": "negedge"
+                      },
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 13,
+                          "attributes": {
+                            "name": "rst_n",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Block",
+                  "lineno": 14,
+                  "attributes": {
+                    "scope": null
+                  },
+                  "children": [
+                    {
+                      "type": "IfStatement",
+                      "lineno": 15,
+                      "children": [
+                        {
+                          "type": "Ulnot",
+                          "lineno": 15,
+                          "children": [
+                            {
+                              "type": "Identifier",
+                              "lineno": 15,
+                              "attributes": {
+                                "name": "rst_n",
+                                "scope": null
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "NonblockingSubstitution",
+                          "lineno": 16,
+                          "children": [
+                            {
+                              "type": "Lvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 16,
+                                  "attributes": {
+                                    "name": "cnt",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "Rvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "IntConst",
+                                  "lineno": 0,
+                                  "attributes": {
+                                    "value": "0",
+                                    "base": 10
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "IfStatement",
+                          "lineno": 17,
+                          "children": [
+                            {
+                              "type": "Eq",
+                              "lineno": 17,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 17,
+                                  "attributes": {
+                                    "name": "cnt",
+                                    "scope": null
+                                  }
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 17,
+                                  "attributes": {
+                                    "name": "CNT_20MS",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NonblockingSubstitution",
+                              "lineno": 18,
+                              "children": [
+                                {
+                                  "type": "Lvalue",
+                                  "lineno": 0,
+                                  "children": [
+                                    {
+                                      "type": "Identifier",
+                                      "lineno": 18,
+                                      "attributes": {
+                                        "name": "cnt",
+                                        "scope": null
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "Rvalue",
+                                  "lineno": 0,
+                                  "children": [
+                                    {
+                                      "type": "IntConst",
+                                      "lineno": 0,
+                                      "attributes": {
+                                        "value": "0",
+                                        "base": 10
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NonblockingSubstitution",
+                              "lineno": 20,
+                              "children": [
+                                {
+                                  "type": "Lvalue",
+                                  "lineno": 0,
+                                  "children": [
+                                    {
+                                      "type": "Identifier",
+                                      "lineno": 20,
+                                      "attributes": {
+                                        "name": "cnt",
+                                        "scope": null
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "Rvalue",
+                                  "lineno": 0,
+                                  "children": [
+                                    {
+                                      "type": "Plus",
+                                      "lineno": 20,
+                                      "children": [
+                                        {
+                                          "type": "Identifier",
+                                          "lineno": 20,
+                                          "attributes": {
+                                            "name": "cnt",
+                                            "scope": null
+                                          }
+                                        },
+                                        {
+                                          "type": "IntConst",
+                                          "lineno": 0,
+                                          "attributes": {
+                                            "value": "1'h1",
+                                            "base": 10
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Reg",
+              "lineno": 22,
+              "attributes": {
+                "name": "key_sec_pre",
+                "signed": false
+              },
+              "children": [
+                {
+                  "type": "Width",
+                  "lineno": 22,
+                  "children": [
+                    {
+                      "type": "Minus",
+                      "lineno": 22,
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 22,
+                          "attributes": {
+                            "name": "N",
+                            "scope": null
+                          }
+                        },
+                        {
+                          "type": "IntConst",
+                          "lineno": 0,
+                          "attributes": {
+                            "value": "1",
+                            "base": 10
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "IntConst",
+                      "lineno": 0,
+                      "attributes": {
+                        "value": "0",
+                        "base": 10
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Reg",
+              "lineno": 23,
+              "attributes": {
+                "name": "key_sec",
+                "signed": false
+              },
+              "children": [
+                {
+                  "type": "Width",
+                  "lineno": 23,
+                  "children": [
+                    {
+                      "type": "Minus",
+                      "lineno": 23,
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 23,
+                          "attributes": {
+                            "name": "N",
+                            "scope": null
+                          }
+                        },
+                        {
+                          "type": "IntConst",
+                          "lineno": 0,
+                          "attributes": {
+                            "value": "1",
+                            "base": 10
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "IntConst",
+                      "lineno": 0,
+                      "attributes": {
+                        "value": "0",
+                        "base": 10
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Always",
+              "lineno": 24,
+              "children": [
+                {
+                  "type": "SensList",
+                  "lineno": 24,
+                  "children": [
+                    {
+                      "type": "Sens",
+                      "lineno": 24,
+                      "attributes": {
+                        "type": "posedge"
+                      },
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 24,
+                          "attributes": {
+                            "name": "clk",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Sens",
+                      "lineno": 24,
+                      "attributes": {
+                        "type": "negedge"
+                      },
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 24,
+                          "attributes": {
+                            "name": "rst_n",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Block",
+                  "lineno": 25,
+                  "attributes": {
+                    "scope": null
+                  },
+                  "children": [
+                    {
+                      "type": "IfStatement",
+                      "lineno": 26,
+                      "children": [
+                        {
+                          "type": "Ulnot",
+                          "lineno": 26,
+                          "children": [
+                            {
+                              "type": "Identifier",
+                              "lineno": 26,
+                              "attributes": {
+                                "name": "rst_n",
+                                "scope": null
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "NonblockingSubstitution",
+                          "lineno": 27,
+                          "children": [
+                            {
+                              "type": "Lvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 27,
+                                  "attributes": {
+                                    "name": "key_sec",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "Rvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Repeat",
+                                  "lineno": 27,
+                                  "children": [
+                                    {
+                                      "type": "Concat",
+                                      "lineno": 27,
+                                      "children": [
+                                        {
+                                          "type": "IntConst",
+                                          "lineno": 0,
+                                          "attributes": {
+                                            "value": "1'b1",
+                                            "base": 10
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "lineno": 27,
+                                      "attributes": {
+                                        "name": "N",
+                                        "scope": null
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "IfStatement",
+                          "lineno": 28,
+                          "children": [
+                            {
+                              "type": "Eq",
+                              "lineno": 28,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 28,
+                                  "attributes": {
+                                    "name": "cnt",
+                                    "scope": null
+                                  }
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 28,
+                                  "attributes": {
+                                    "name": "CNT_20MS",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NonblockingSubstitution",
+                              "lineno": 29,
+                              "children": [
+                                {
+                                  "type": "Lvalue",
+                                  "lineno": 0,
+                                  "children": [
+                                    {
+                                      "type": "Identifier",
+                                      "lineno": 29,
+                                      "attributes": {
+                                        "name": "key_sec",
+                                        "scope": null
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "Rvalue",
+                                  "lineno": 0,
+                                  "children": [
+                                    {
+                                      "type": "Identifier",
+                                      "lineno": 29,
+                                      "attributes": {
+                                        "name": "key",
+                                        "scope": null
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Always",
+              "lineno": 31,
+              "children": [
+                {
+                  "type": "SensList",
+                  "lineno": 31,
+                  "children": [
+                    {
+                      "type": "Sens",
+                      "lineno": 31,
+                      "attributes": {
+                        "type": "posedge"
+                      },
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 31,
+                          "attributes": {
+                            "name": "clk",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Sens",
+                      "lineno": 31,
+                      "attributes": {
+                        "type": "negedge"
+                      },
+                      "children": [
+                        {
+                          "type": "Identifier",
+                          "lineno": 31,
+                          "attributes": {
+                            "name": "rst_n",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Block",
+                  "lineno": 32,
+                  "attributes": {
+                    "scope": null
+                  },
+                  "children": [
+                    {
+                      "type": "IfStatement",
+                      "lineno": 33,
+                      "children": [
+                        {
+                          "type": "Ulnot",
+                          "lineno": 33,
+                          "children": [
+                            {
+                              "type": "Identifier",
+                              "lineno": 33,
+                              "attributes": {
+                                "name": "rst_n",
+                                "scope": null
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "NonblockingSubstitution",
+                          "lineno": 34,
+                          "children": [
+                            {
+                              "type": "Lvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 34,
+                                  "attributes": {
+                                    "name": "key_sec_pre",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "Rvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Repeat",
+                                  "lineno": 34,
+                                  "children": [
+                                    {
+                                      "type": "Concat",
+                                      "lineno": 34,
+                                      "children": [
+                                        {
+                                          "type": "IntConst",
+                                          "lineno": 0,
+                                          "attributes": {
+                                            "value": "1'b1",
+                                            "base": 10
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "lineno": 34,
+                                      "attributes": {
+                                        "name": "N",
+                                        "scope": null
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "NonblockingSubstitution",
+                          "lineno": 36,
+                          "children": [
+                            {
+                              "type": "Lvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 36,
+                                  "attributes": {
+                                    "name": "key_sec_pre",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "Rvalue",
+                              "lineno": 0,
+                              "children": [
+                                {
+                                  "type": "Identifier",
+                                  "lineno": 36,
+                                  "attributes": {
+                                    "name": "key_sec",
+                                    "scope": null
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Assign",
+              "lineno": 38,
+              "children": [
+                {
+                  "type": "Lvalue",
+                  "lineno": 0,
+                  "children": [
+                    {
+                      "type": "Identifier",
+                      "lineno": 38,
+                      "attributes": {
+                        "name": "key_pulse",
+                        "scope": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Rvalue",
+                  "lineno": 0,
+                  "children": [
+                    {
+                      "type": "And",
+                      "lineno": 38,
+                      "children": [
+                        {
+                          "type": "Unot",
+                          "lineno": 38,
+                          "children": [
+                            {
+                              "type": "Identifier",
+                              "lineno": 38,
+                              "attributes": {
+                                "name": "key_sec",
+                                "scope": null
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Identifier",
+                          "lineno": 38,
+                          "attributes": {
+                            "name": "key_sec_pre",
+                            "scope": null
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_code": "module debounce \n#(\n\tparameter  N         =  2,\n\tparameter  CNT_20MS  =  19'h75601//?\u03bc\u00ed3\u00ea\u00b1?\u00f324MHz\uffe1?\u00f2a?\u00f3\u00ea\u00b120ms\u00d7\u00f3\u00f3\u00f2\u00ea\u00b1??\n)\n(\n\tinput\twire         clk,\n\tinput\twire         rst_n,\n\t// key\n\tinput   wire [N-1:0] key,\n\toutput\twire [N-1:0] key_pulse\n); \n  \nreg [18:0]\tcnt; //2\u00fa\u00e9\u00fa?\u00f3\u00ea\u00b1?\u00f9\u00f3?\u03bc???\u00eay?\u00f7\uffe1??\u03bc\u00ed3\u00ea\u00b1?\u00f324MHz\uffe1?\u00f2a?\u00f3\u00ea\u00b120ms\u00d7\u00f3\u00f3\u00f2\u00ea\u00b1??   \n\nalways@(posedge clk or negedge rst_n)\nbegin\n     if(!rst_n)\n          cnt <= 0;\n     else if(cnt == CNT_20MS)\n          cnt <= 0;\n     else\n          cnt <= cnt + 1'h1;\nend  \n\nreg [N-1:0] key_sec_pre;                \nreg [N-1:0] key_sec;                      \n\nalways@(posedge clk  or  negedge rst_n)\nbegin\n     if(!rst_n) \n         key_sec <= {N{1'b1}};                \n     else if(cnt == CNT_20MS)\n         key_sec <= key;  \nend\n\nalways@(posedge clk  or  negedge rst_n)\nbegin\n     if(!rst_n)\n         key_sec_pre <= {N{1'b1}};\n     else                   \n         key_sec_pre <= key_sec;             \nend  \n    \nassign  key_pulse = ~key_sec & key_sec_pre ;     \n \nendmodule",
+  "source_file": "debounce.v",
+  "source_path": "debounce.v"
+}
