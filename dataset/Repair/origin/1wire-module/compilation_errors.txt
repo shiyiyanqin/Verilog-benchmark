@@ -1,0 +1,171 @@
+Compilation started at 2025/08/17 ÷‹»’ 19:26:39.32 
+===================================================== 
+ 
+FILE: temp_1wire.v 
+----------------------------------------------------- 
+temp_1wire.v:18: syntax error
+temp_1wire.v:18: error: Invalid module instantiation
+temp_1wire.v:19: error: Invalid module instantiation
+temp_1wire.v:46: syntax error
+temp_1wire.v:46: error: Invalid module instantiation
+temp_1wire.v:54: error: invalid module item.
+temp_1wire.v:55: syntax error
+temp_1wire.v:55: error: Invalid module instantiation
+temp_1wire.v:59: error: invalid module item.
+temp_1wire.v:60: syntax error
+temp_1wire.v:60: error: Invalid module instantiation
+temp_1wire.v:67: error: invalid module item.
+temp_1wire.v:67: syntax error
+temp_1wire.v:67: error: invalid module item.
+temp_1wire.v:68: syntax error
+temp_1wire.v:68: error: Invalid module instantiation
+temp_1wire.v:75: error: invalid module item.
+temp_1wire.v:76: syntax error
+temp_1wire.v:78: error: invalid module item.
+temp_1wire.v:79: syntax error
+temp_1wire.v:79: error: Invalid module instantiation
+temp_1wire.v:88: error: invalid module item.
+temp_1wire.v:89: syntax error
+temp_1wire.v:89: error: Invalid module instantiation
+temp_1wire.v:90: error: Invalid module instantiation
+temp_1wire.v:91: error: Invalid module instantiation
+temp_1wire.v:92: error: Invalid module instantiation
+temp_1wire.v:93: error: Invalid module instantiation
+temp_1wire.v:94: error: Invalid module instantiation
+temp_1wire.v:95: error: Invalid module instantiation
+temp_1wire.v:100: error: invalid module item.
+temp_1wire.v:100: syntax error
+temp_1wire.v:100: error: invalid module item.
+temp_1wire.v:104: syntax error
+temp_1wire.v:104: error: Invalid module instantiation
+temp_1wire.v:105: syntax error
+temp_1wire.v:105: error: Invalid module instantiation
+temp_1wire.v:111: syntax error
+temp_1wire.v:111: error: Invalid module instantiation
+temp_1wire.v:112: error: Invalid module instantiation
+temp_1wire.v:113: error: Invalid module instantiation
+temp_1wire.v:114: error: Invalid module instantiation
+temp_1wire.v:118: syntax error
+temp_1wire.v:118: error: Invalid module instantiation
+temp_1wire.v:119: error: Invalid module instantiation
+temp_1wire.v:120: error: Invalid module instantiation
+temp_1wire.v:124: syntax error
+temp_1wire.v:124: error: Invalid module instantiation
+temp_1wire.v:125: error: Invalid module instantiation
+temp_1wire.v:126: error: Invalid module instantiation
+temp_1wire.v:130: syntax error
+temp_1wire.v:130: error: Invalid module instantiation
+temp_1wire.v:131: error: Invalid module instantiation
+temp_1wire.v:132: error: Invalid module instantiation
+temp_1wire.v:133: error: Invalid module instantiation
+temp_1wire.v:137: syntax error
+temp_1wire.v:137: error: Invalid module instantiation
+temp_1wire.v:138: error: Invalid module instantiation
+temp_1wire.v:139: error: Invalid module instantiation
+temp_1wire.v:143: syntax error
+temp_1wire.v:143: error: Invalid module instantiation
+temp_1wire.v:144: error: Invalid module instantiation
+temp_1wire.v:145: error: Invalid module instantiation
+temp_1wire.v:149: syntax error
+temp_1wire.v:149: error: Invalid module instantiation
+temp_1wire.v:150: error: Invalid module instantiation
+temp_1wire.v:151: error: Invalid module instantiation
+temp_1wire.v:155: syntax error
+temp_1wire.v:155: error: Invalid module instantiation
+temp_1wire.v:156: error: Invalid module instantiation
+temp_1wire.v:157: syntax error
+temp_1wire.v:157: error: Invalid module instantiation
+temp_1wire.v:161: syntax error
+temp_1wire.v:161: error: Invalid module instantiation
+temp_1wire.v:168: syntax error
+temp_1wire.v:168: error: Invalid module instantiation
+temp_1wire.v:169: error: Invalid module instantiation
+temp_1wire.v:170: error: Invalid module instantiation
+temp_1wire.v:172: syntax error
+temp_1wire.v:172: error: Invalid module instantiation
+temp_1wire.v:173: error: Invalid module instantiation
+temp_1wire.v:174: error: Invalid module instantiation
+temp_1wire.v:178: syntax error
+temp_1wire.v:178: error: Invalid module instantiation
+temp_1wire.v:181: syntax error
+temp_1wire.v:181: error: Invalid module instantiation
+temp_1wire.v:182: error: Invalid module instantiation
+temp_1wire.v:185: syntax error
+temp_1wire.v:185: error: Invalid module instantiation
+temp_1wire.v:186: error: Invalid module instantiation
+temp_1wire.v:191: syntax error
+temp_1wire.v:191: error: Invalid module instantiation
+temp_1wire.v:192: error: Invalid module instantiation
+temp_1wire.v:193: error: Invalid module instantiation
+temp_1wire.v:197: syntax error
+temp_1wire.v:197: error: Invalid module instantiation
+temp_1wire.v:198: error: Invalid module instantiation
+temp_1wire.v:203: syntax error
+temp_1wire.v:203: error: Invalid module instantiation
+temp_1wire.v:209: syntax error
+temp_1wire.v:209: error: Invalid module instantiation
+temp_1wire.v:210: error: Invalid module instantiation
+temp_1wire.v:212: syntax error
+temp_1wire.v:212: error: Invalid module instantiation
+temp_1wire.v:213: error: Invalid module instantiation
+temp_1wire.v:214: error: Invalid module instantiation
+temp_1wire.v:218: syntax error
+temp_1wire.v:218: error: Invalid module instantiation
+temp_1wire.v:219: error: Invalid module instantiation
+temp_1wire.v:220: syntax error
+temp_1wire.v:220: error: Invalid module instantiation
+temp_1wire.v:224: syntax error
+temp_1wire.v:224: error: Invalid module instantiation
+temp_1wire.v:225: error: Invalid module instantiation
+temp_1wire.v:226: error: Invalid module instantiation
+temp_1wire.v:230: syntax error
+temp_1wire.v:230: error: Invalid module instantiation
+temp_1wire.v:231: error: Invalid module instantiation
+temp_1wire.v:232: error: Invalid module instantiation
+temp_1wire.v:237: syntax error
+temp_1wire.v:237: error: Invalid module instantiation
+temp_1wire.v:238: error: Invalid module instantiation
+temp_1wire.v:246: error: invalid module item.
+temp_1wire.v:247: syntax error
+temp_1wire.v:247: error: invalid module item.
+temp_1wire.v:248: syntax error
+temp_1wire.v:248: error: invalid module item.
+temp_1wire.v:249: syntax error
+temp_1wire.v:249: error: invalid module item.
+temp_1wire.v:249: syntax error
+temp_1wire.v:249: error: invalid module item.
+temp_1wire.v:250: syntax error
+temp_1wire.v:250: error: invalid module item.
+temp_1wire.v:251: syntax error
+temp_1wire.v:251: error: invalid module item.
+temp_1wire.v:252: syntax error
+temp_1wire.v:252: error: invalid module item.
+temp_1wire.v:253: syntax error
+temp_1wire.v:253: error: invalid module item.
+temp_1wire.v:254: syntax error
+temp_1wire.v:254: error: invalid module item.
+temp_1wire.v:255: syntax error
+temp_1wire.v:255: error: invalid module item.
+temp_1wire.v:256: syntax error
+temp_1wire.v:256: error: invalid module item.
+temp_1wire.v:257: syntax error
+temp_1wire.v:263: error: invalid module item.
+temp_1wire.v:264: syntax error
+temp_1wire.v:264: error: invalid module item.
+temp_1wire.v:264: syntax error
+temp_1wire.v:264: error: invalid module item.
+temp_1wire.v:265: syntax error
+temp_1wire.v:265: error: invalid module item.
+temp_1wire.v:265: syntax error
+temp_1wire.v:265: error: invalid module item.
+temp_1wire.v:266: syntax error
+temp_1wire.v:266: error: invalid module item.
+temp_1wire.v:266: syntax error
+temp_1wire.v:266: error: invalid module item.
+temp_1wire.v:267: syntax error
+temp_1wire.v:267: error: invalid module item.
+temp_1wire.v:268: syntax error
+temp_1wire.v:268: error: invalid module item.
+temp_1wire.v:269: syntax error
+temp_1wire.v:272: error: invalid module item.
+----------------------------------------------------- 
